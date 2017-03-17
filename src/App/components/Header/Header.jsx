@@ -25,8 +25,8 @@ export default class Header extends Component {
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
-          <NavItem eventKey={1} componentClass={Link} href="/">Главная</NavItem>
-          <NavItem eventKey={2} componentClass={Link} href="/admin">Админка</NavItem>
+          <NavItem eventKey={1} componentClass={Link} href="/">Homepage</NavItem>
+          <NavItem eventKey={2} componentClass={Link} href="/admin">Admin</NavItem>
           <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
             <MenuItem eventKey={3.1}>Action</MenuItem>
             <MenuItem eventKey={3.2}>Another action</MenuItem>
@@ -45,7 +45,7 @@ export default class Header extends Component {
             </NavDropdown>
           </If>
           <If condition={!auth.isAuth}>
-            <NavItem eventKey={2} componentClass={Link} href="/auth">Войти</NavItem>
+            <NavItem eventKey={2} componentClass={Link} href="/auth">Log in</NavItem>
           </If>
         </Nav>
       </Navbar>
